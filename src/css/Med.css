@@ -1,0 +1,139 @@
+:root{
+    --bg: #a7cced;
+    --text: #304d6d;
+    --one: #63adf2;
+    --two: #545e75;
+    --three: #82a0bc;
+    --four: #C5C8E6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--four), var(--bg));
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.med-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.med-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 225px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.med-card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.med-card p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.contact-button {
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--one);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    bottom: 0;
+    width: 100%;
+    gap: 15px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 8px;
+}
+
+.nav-button {
+    padding: 10px 50px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--one);
+    color: white;
+    margin: 0 15px;
+    transition: all ease 0.3s;
+    
+}
+
+.nav-button:hover {
+    background-color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        height: 90vh; 
+    }
+  
+    .logo {
+        max-width: 300px;
+    }
+  
+    .nav-button {
+        padding: 10px 20px;
+        font-size: 24px;
+        margin: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-container {
+        height: 100vh;
+    }
+  
+    .logo {
+        max-width: 200px;
+    }
+  
+    button{
+      cursor: pointer;
+      transition: all .3s ease;
+      
+  }
+  
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .nav-button {
+        padding: 10px 30px;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+  }
