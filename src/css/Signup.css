@@ -1,0 +1,149 @@
+.fadeOut {
+  animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.imageContainer {
+  margin-bottom: 20px;
+}
+
+.imageContainer img {
+  width: 150px;
+  height: auto;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Adjust the width for two-column layout */
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.formRow input,
+.formRow select {
+  width: 48%; /* Each field takes half of the row */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #7b61ff;
+}
+
+button {
+  padding: 12px;
+  background-color: #7b61ff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width for the button */
+}
+
+button:hover {
+  background-color: #6a4eb2;
+}
+
+.message {
+  text-align: center;
+  font-size: 14px;
+}
+
+#showLoginLink {
+  color: #7b61ff;
+  text-decoration: none;
+}
+
+#showLoginLink:hover {
+  text-decoration: underline;
+}
+
+#errorMsg {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+}
+
+#theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+#theme:hover {
+  color: #7b61ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .formRow {
+    flex-direction: column;
+  }
+  .formRow input,
+  .formRow select {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.formRow input,
+.formRow select {
+  width: 48%; /* Each field takes half of the row */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 42px; /* Ensures select box matches input height */
+  appearance: none; /* Removes default select dropdown styling in some browsers */
+}
+
+select:focus {
+  outline: none;
+  border-color: #7b61ff;
+}
