@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'BPreplay', sans-serif;
+}
+
+@font-face {
+  font-family: 'BPreplay';
+  src: url('/fonts/BPreplay.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.bg-backgr {
+  background: linear-gradient(135deg, #b1f0e9, #daf2f2, #b1f0e9);
+  background-size: 400% 400%; 
+  animation: gradientShift 15s ease infinite; 
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes buttonHover {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); } 
+  100% { transform: scale(1); }
+}
+
+.animated-button:hover {
+  animation: buttonHover 0.4s ease-in-out forwards;
+}
+
+
+.custom-input {
+  width: 380px;
+  padding: 10px;
+  border: 2px solid #0fb8a7;
+  border-radius: 30px;
+  color: #046157;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-input::placeholder {
+  color: #046157;
+  opacity: 0.6;
+  transition: opacity 0.8s ease;
+}
+
+.custom-input:hover::placeholder {
+  opacity: 0.3;
+}
