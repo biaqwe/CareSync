@@ -291,7 +291,7 @@ export default function Profile() {
               ) : (
                 <button
                   onClick={toggleEdit}
-                  className="px-8 py-4 bg-one text-white rounded-full hover:bg-two transition-colors text-lg"
+                  className="w-[380px] px-12 py-3 bg-one text-white rounded-full hover:bg-two transition-colors text-lg"
                 >
                   Edit
                 </button>

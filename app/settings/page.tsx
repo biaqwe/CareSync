@@ -134,7 +134,7 @@ export default function Settings() {
 
       <div className="flex-1 p-16 flex items-center justify-center">
         <div className="w-full max-w-2xl">
-          <h2 className="text-3xl font-bold text-center text-gray-700 mb-6">Settings</h2>
+          <h2 className="text-3xl font-bold text-center text-two mb-6">Settings</h2>
 
           <div className="w-full bg-white p-6 rounded-lg shadow-md">
             <form onSubmit={handleEmailSubmit} className="space-y-4">
