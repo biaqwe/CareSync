@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# CareSync
+## Overview
+CareSync is a user-friendly platform designed to streamline communication and collaboration between patients and doctors. The system offers a centralized solution for managing appointments, tracking symptoms, and accessing medical history, enhancing the overall healthcare experience for both patients and providers.
+
+## Features (in work)
+- Appointment Management – Easily schedule, reschedule, and track medical appointments.
+- Symptom Tracking – Maintain a record of symptoms to provide accurate information to healthcare providers.
+- Medical History Access – Securely store and retrieve medical records for better continuity of care.
+- Doctor-Patient Communication – Enable seamless interaction between patients and medical professionals.
+
 ## Getting Started
 
 First, run the development server:
